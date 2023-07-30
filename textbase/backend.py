@@ -93,7 +93,7 @@ async def chat(messages: List[Message], state: dict = None):
     print("here", state)
 
     # Call the on_message function from the dynamically loaded module
-    response = module.on_message(messages, state)
+    response = module.on_message(messages[len(messages)-1])
     if type(response) is tuple:
         bot_response, new_state = response
         return {
