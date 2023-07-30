@@ -1,42 +1,23 @@
-# Textbase
+# BudgetGPT (A Budgeting AI ChatBot)
 
-✨ Textbase is a framework for building chatbots using NLP and ML. ✨
+## Steps to run the project in local
+- Setup an local MongoDB database named `budgetgpt` and default collection  as `user_details`.
 
-Just implement the `on_message` function in `main.py` and Textbase will take care of the rest :)
+![image](https://github.com/MBSA-INFINITY/Mercor-Chatbot-Challenge/assets/85332648/27c8ca45-3f1c-4904-b249-5abcef472cf3)
 
-Since it is just Python you can use whatever models, libraries, vector databases and APIs you want.
+- Add a document in that collection same as follows:-
 
-_Coming soon:_
+![image](https://github.com/MBSA-INFINITY/Mercor-Chatbot-Challenge/assets/85332648/3000584a-4904-4faf-9d58-9291b06b0a66)
 
-- [ ] PyPI package
-- [ ] SMS integration
-- [ ] Easy web deployment via `textbase deploy`
-- [ ] Native integration of other models (Claude, Llama, ...)
+- Create an .env file main directory and Set the **OPENAI_API_KEY** in the `.env` file of the codebase as follow:-
+  `export OPENAI_API_KEY = "YOUR_API_KEY"`
 
-## Installation
-
-Clone the repository and install the dependencies using [Poetry](https://python-poetry.org/) (you might have to [install Poetry](https://python-poetry.org/docs/#installation) first).
+- Finally, Run the following command:
 
 ```bash
-git clone https://github.com/cofactoryai/textbase
-cd textbase
-poetry install
+./start_server.sh
 ```
 
-## Start development server
+Now go to [http://localhost:4000](http://localhost:4000) and start chatting with your BudgetGPT! The BudgetGPT will automatically reload when you change the code.
 
-> If you're using the default template, **remember to set the OpenAI API key** in `main.py`.
 
-Run the following command:
-
-```bash
-poetry run python textbase/textbase_cli.py test main.py
-```
-
-Now go to [http://localhost:4000](http://localhost:4000) and start chatting with your bot! The bot will automatically reload when you change the code.
-
-_Simpler version using PyPI package and CLI coming soon!_
-
-## Contributions
-
-Contributions are welcome! Please open an issue or a pull request.
