@@ -1,4 +1,9 @@
 # BudgetGPT (A Budgeting AI ChatBot)
+**An Example!**
+![image](https://github.com/MBSA-INFINITY/Mercor-Chatbot-Challenge/assets/85332648/de335ae7-f1da-4844-96dc-25192bc64496)
+
+**What is my current balance?**
+![image](https://github.com/MBSA-INFINITY/Mercor-Chatbot-Challenge/assets/85332648/c094bfb9-2153-470a-8fc5-474c1807fd2d)
 
 ## Steps to run the project in local
 - Setup an local MongoDB database named `budgetgpt` and default collection  as `user_details`.
